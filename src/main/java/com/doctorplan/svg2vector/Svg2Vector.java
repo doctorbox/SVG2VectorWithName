@@ -69,6 +69,8 @@ public class Svg2Vector {
     public static final String SVG_CLIP_RULE = "clip-rule";
     public static final String SVG_MASK = "mask";
     public static final String SVG_POINTS = "points";
+    public static final String SVG_ID = "id";
+
     public static final ImmutableMap<String, String> presentationMap =
             ImmutableMap.<String, String>builder()
                     .put(SVG_CLIP, "android:clip")
@@ -82,6 +84,7 @@ public class Svg2Vector {
                     .put(SVG_STROKE_LINEJOIN, "android:strokeLineJoin")
                     .put(SVG_STROKE_LINECAP, "android:strokeLineCap")
                     .put(SVG_STROKE_WIDTH, "android:strokeWidth")
+                    .put(SVG_ID, "android:name")
                     .build();
     public static final ImmutableMap<String, String> gradientMap =
             ImmutableMap.<String, String>builder()
